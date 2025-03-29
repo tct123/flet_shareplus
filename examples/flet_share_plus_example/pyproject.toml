@@ -4,13 +4,8 @@ version = "1.0.0"
 description = ""
 readme = "README.md"
 requires-python = ">=3.9"
-authors = [
-    { name = "Flet developer", email = "you@example.com" }
-]
-dependencies = [
-  "flet-share-plus",
-  "flet>=0.27.6",
-]
+authors = [{ name = "Flet developer", email = "you@example.com" }]
+dependencies = ["flet-share-plus", "flet>=0.27.6"]
 
 [tool.flet]
 # org name in reverse domain name notation, e.g. "com.mycompany".
@@ -31,16 +26,14 @@ copyright = "Copyright (C) 2025 by MyCompany"
 path = "src"
 
 [tool.flet.dev_packages]
-flet-share-plus = "..\\.." # relative path
+flet-share-plus = "..//.." # relative path
 
 [tool.uv]
-dev-dependencies = [
-    "flet[all]==0.27.6",
-]
+dev-dependencies = ["flet[all]==0.27.6"]
 
 [tool.uv.sources]
-flet-share-plus = { path = "..\\..\\", editable = true }
+flet-share-plus = { path = "..//..//", editable = true }
 
 [tool.poetry.group.dev.dependencies]
-flet = {extras = ["all"], version = "0.27.6"}
-flet-share-plus = {path = "..\\..\\", develop = true}
+flet = { extras = ["all"], version = "0.27.6" }
+flet-share-plus = { path = "..//..//", develop = true }
